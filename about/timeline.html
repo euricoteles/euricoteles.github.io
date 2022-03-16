@@ -6,9 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./../css/w3.css">
+    <link rel="stylesheet" href="./../css/timeline.css">
+    <link rel="stylesheet" href="./../css/timeline.scss">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../css/reset.min.css">
     <script src="./../js/typewrite.js"></script>
     <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
@@ -29,7 +32,7 @@
     <!-- Right position (Menu) -->
     <a href="./../contact/contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none w3-hover-text-black">Contact</a>
     <a href="./../articles/notebook.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none w3-hover-text-black">Notebook</a>
-   <!-- <a href="./../portofolio/portofolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none w3-hover-text-black">Portofolio</a>-->
+    <!--<a href="./../portofolio/portofolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none w3-hover-text-black">Portofolio</a>-->
     <a href="./../about/about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none w3-hover-text-black">About Me</a>
     <a href="./../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-none w3-hover-text-black">Home</a>
   </div>
@@ -38,7 +41,7 @@
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="./../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
     <a href="./../about/about.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
-   <!-- <a href="./../portofolio/portofolio.html" class="w3-bar-item w3-button w3-padding-large">Portofolio</a> -->
+    <!--<a href="./../portofolio/portofolio.html" class="w3-bar-item w3-button w3-padding-large">Portofolio</a>-->
     <a href="./../articles/notebook.html" class="w3-bar-item w3-button w3-padding-large">Notebook</a>
     <a href="./../contact/contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
   </div>
@@ -47,23 +50,42 @@
 <!-- Second Grid -->
 <div class="w3-container w3-padding-64 w3-center">
   <div class="w3-content ">
-    <h1 class="w3-margin">My Certifications</h1>
-    <h5 class="w3-padding-32">Those are the certifications I have.</h5>
-    <div class="w3-row-padding">
-      <div class="w3-container w3-third w3-mobile">
-        <img src="./../img/checkpoint_js.PNG" style="width:100%" onclick="onClick(this)">
+    <div class="container">
+      <div class="page-header">
+          <h1 id="timeline">Timeline</h1>
       </div>
-      <div class="w3-container w3-third w3-mobile">
-        <img src="./../img/checkpoint_mhns.PNG" style="width:100%" onclick="onClick(this)">
-      </div>
-      <div class="w3-container w3-third w3-mobile">
-        <img src="./../img/network_essentials.PNG" style="width:100%" onclick="onClick(this)">
-      </div>
-    </div>
+      <ul class="timeline">
+        <li class="timeline-event">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">April 2011 - heute</p>
+            <h3>Geil,Danke! GmbH</h3>
+            <h4>Geschäftsführerin eines Web-Studios</h4>
+            <p><strong>Schwerpunkt: Frontend-Entwicklung</strong><br>Entwickeln von anspruchsvollen, animierten, responsive und adaptive Webseiten mit HTML5, SCSS, jQuery; für alle Browser, optimiert für Desktop, Notebook, Smartphones und Tablets (iOS, Android, Windows).</p>
+            <p><strong>Projektmanagement mit Scrum</strong><br>Ständiges Verbessern des agilen Entwicklungsprozesses beispielsweise durch Grunt, Yeoman, GIT, JIRA und BrowserStack.</p>
+          </div>
+        </li>
+        <li class="timeline-event">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">November 2009 - März 2011</p>
+            <h3>Freelancer</h3>
+            <h4>Designer und Autor</h4>
+            <p>Konzeption, Design und Produktion von Digitalen Magazinen mit InDesign, der Adobe Digital Publishing Suite und HTML5. Co-Autorin der Fachbücher "Digitales Publizieren für Tablets" und "Adobe Digital Publishing Suite" erschienen im dpunkt.verlag.</p>
+          </div>
+        </li>
+        <li class="timeline-event">
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">April 2011 - heute</p>
+            <h3>konplan gmbh</h3>
+            <h4>IT-Consultant</h4>
+            <p><strong>Systemarchitektur, Consulting</strong><br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
+          </div>
+        </li>
+      </ul>  
+  </div>
     
-    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-      <img class="w3-modal-content" id="img01" style="width:50%">
-    </div>
   </div>
 </div>
 
@@ -98,11 +120,5 @@ function myFunction() {
 }
 </script>
 
-<script>
-  function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-  }
-  </script>
 </body>
 </html>
