@@ -44,19 +44,30 @@
   </div>
 </div>
 
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-twothird">
-        <h1>Sorry!</h1>
-        <h5 class="w3-padding-32">Still Under Construction</h5>
+<!-- Second Grid -->
+<div class="w3-container w3-padding-64 w3-center">
+  <div class="w3-content ">
+    <h1 class="w3-margin">My Certifications</h1>
+    <h5 class="w3-padding-32">Those are the certifications I have.</h5>
+    <div class="w3-row-padding">
+      <div class="w3-container w3-third w3-mobile">
+        <img src="./../img/checkpoint_js.PNG" style="width:100%" onclick="onClick(this)">
       </div>
-  
-      <div class="w3-third w3-center">
-        <i class="fa fa-search w3-padding-64 w3-xxxlarge"></i>
+      <div class="w3-container w3-third w3-mobile">
+        <img src="./../img/checkpoint_mhns.PNG" style="width:100%" onclick="onClick(this)">
+      </div>
+      <div class="w3-container w3-third w3-mobile">
+        <img src="./../img/network_essentials.PNG" style="width:100%" onclick="onClick(this)">
       </div>
     </div>
+    
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <img class="w3-modal-content" id="img01" style="width:50%">
+    </div>
   </div>
+</div>
+
+
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
     <h1 class="w3-margin w3-xlarge">Quote of the day: Keep trying</h1>
 </div>
@@ -87,5 +98,11 @@ function myFunction() {
 }
 </script>
 
+<script>
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+  }
+  </script>
 </body>
 </html>
